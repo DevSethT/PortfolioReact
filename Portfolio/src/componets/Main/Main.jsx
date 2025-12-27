@@ -23,6 +23,9 @@ function Main(){
                     </NavLink>
                 </div>
                 <div className="main-project__cards">
+                    <div className="main-project__cards-header">
+                        <h2 className="main-project__cards-title">Projects</h2>
+                    </div>
                     <div className="main-project__card">
                         <div className="main-project__card-image">
                         <img src="#" alt="project screenshot" />
