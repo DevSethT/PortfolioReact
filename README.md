@@ -1,4 +1,4 @@
-Personal Portfolio Website 🚀
+# Seth Taylor — Developer Portfolio
 
 This is my personal developer portfolio, currently in progress, built to showcase my projects, skills, and background as I work toward becoming a full-stack software engineer.
 The site is being developed using React + Vite with a clean, modern design and a focus on good structure, scalability, and real-world best practices.

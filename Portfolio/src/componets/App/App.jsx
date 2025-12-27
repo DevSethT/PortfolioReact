@@ -8,7 +8,6 @@ import Main from '../Main/Main';
 import Projects from '../Projects/Projects';
 import Contact from '../Contact/Contact';
 import About from '../About/About';
-import Header from '../Header/Header'
 import PageNotFound from '../PageNotFound/PageNotFound';
 
 
@@ -16,7 +15,6 @@ function App() {
 
   return (
     <>
-    <Header />
     <NavBar />
       <Routes>
         <Route path='*' element={<PageNotFound/>} />
