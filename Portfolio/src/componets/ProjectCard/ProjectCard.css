@@ -1,0 +1,136 @@
+.projectcard {
+  width: 340px;
+  min-height: 380px;
+  border-radius: 16px;
+
+  /* glass base */
+  background-color: rgba(18, 18, 24, 0.65);
+  backdrop-filter: blur(12px);
+
+  /* layout */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  /* depth */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+
+  /* hover motion */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+/* neon gradient border layer */
+.projectcard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(138, 43, 226, 0.85),
+    rgba(0, 191, 255, 0.85)
+  );
+
+  /* makes it look like a border (center cut out) */
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+
+  opacity: 0.35;
+  transition: opacity 0.3s ease, filter 0.3s ease;
+  pointer-events: none;
+}
+
+.projectcard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(138, 43, 226, 0.35),
+    0 0 40px rgba(0, 191, 255, 0.15), 0 18px 40px rgba(0, 0, 0, 0.6);
+}
+
+.projectcard:hover::before {
+  opacity: 1;
+  filter: blur(0.5px);
+}
+
+/* image */
+.projectcard__image-container {
+  overflow: hidden;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.projectcard__image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+
+  transition: transform 0.35s ease;
+}
+
+.projectcard:hover .projectcard__image {
+  transform: scale(1.05);
+}
+
+/* content */
+.projectcard__info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+
+/* title glow */
+.projectcard__title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f5f5ff;
+
+  text-shadow: 0 0 6px rgba(138, 43, 226, 0.35);
+}
+
+/* description (2-ish lines without webkit clamp) */
+.projectcard__discription {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: rgba(220, 220, 235, 0.75);
+
+  max-height: calc(1.4em * 2);
+  overflow: hidden;
+}
+
+/* links pinned to bottom using flex trick */
+.projectcard__links-contaner {
+  margin-top: auto;
+}
+
+.projectcard__links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.projectcard__link a,
+.projectcard__link span {
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: rgba(138, 43, 226, 0.85);
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.projectcard__link a:hover {
+  color: #b084ff;
+  text-shadow: 0 0 8px rgba(138, 43, 226, 0.6);
+}
+
+.projectcard__link span {
+  color: rgba(180, 180, 200, 0.4);
+}
