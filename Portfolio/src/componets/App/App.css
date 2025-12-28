@@ -1,0 +1,18 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  /* if your global background isn't set elsewhere,
+     you can set it here instead */
+  background: radial-gradient(
+      circle at 15% 10%,
+      rgba(138, 43, 226, 0.18),
+      transparent 40%
+    ),
+    radial-gradient(circle at 85% 20%, rgba(0, 191, 255, 0.14), transparent 45%),
+    radial-gradient(circle at 40% 90%, rgba(138, 43, 226, 0.1), transparent 50%),
+    #0b0b12;
+
+  color: #f5f5ff;
+}

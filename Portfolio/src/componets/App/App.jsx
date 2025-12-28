@@ -1,5 +1,4 @@
-import './App.css'
-import { useEffect, useState } from "react";
+import "./App.css";
 import { Routes, Route } from "react-router-dom";
 
 
@@ -12,19 +11,18 @@ import PageNotFound from '../PageNotFound/PageNotFound';
 
 
 function App() {
-
   return (
     <>
     <NavBar />
       <Routes>
-        <Route path='*' element={<PageNotFound/>} />
-        <Route path='/' element={<Main />} />
-        <Route path='/projects' element={<Projects />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/contact-me' element={<Contact />} />
+        <Route path="*" element={<PageNotFound />} />
+        <Route path="/" element={<Main />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact-me" element={<Contact />} />
       </Routes>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
