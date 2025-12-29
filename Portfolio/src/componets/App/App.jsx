@@ -12,7 +12,7 @@ import PageNotFound from '../PageNotFound/PageNotFound';
 
 function App() {
   return (
-    <>
+    <div className="app">
     <NavBar />
       <Routes>
         <Route path="*" element={<PageNotFound />} />

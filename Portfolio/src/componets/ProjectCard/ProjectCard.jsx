@@ -5,7 +5,7 @@ function ProjectCard({ projectInfo }) {
     <div className="projectcard">
       <div className="projectcard__image-container">
         {/* image pulled from url or file havnt desided yet and surce and ult auto fill in*/}
-        <img src="#" alt="#" className="projectcard__image" />
+        <img src={projectInfo.image} alt={projectInfo.title} className="projectcard__image" />
       </div>
       <div className="projectcard__info">
         {/* Title pulled from a constants.s */}
