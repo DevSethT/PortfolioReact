@@ -4,7 +4,7 @@ import "./Contact.css";
 export default function Contact() {
   const email = "taylorseth59@gmail.com";
   const linkedIn = "https://www.linkedin.com/in/seth-taylor-5a766018a";
-  const github = "https://github.com/DeadBrain19";
+  const github = "https://github.com/DevSethT";
 
   const subject = encodeURIComponent("Portfolio — Let's connect");
   const body = encodeURIComponent(
