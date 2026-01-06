@@ -5,7 +5,11 @@ function ProjectCard({ projectInfo }) {
     <div className="projectcard">
       <div className="projectcard__image-container">
         {/* image pulled from url or file havnt desided yet and surce and ult auto fill in*/}
-        <img src={projectInfo.image} alt={projectInfo.title} className="projectcard__image" />
+        <img
+          src={projectInfo.image}
+          alt={projectInfo.title}
+          className="projectcard__image"
+        />
       </div>
       <div className="projectcard__info">
         {/* Title pulled from a constants.s */}
@@ -18,7 +22,9 @@ function ProjectCard({ projectInfo }) {
           <ul className="projectcard__links">
             {/* Link to Giithub repository */}
             <li className="projectcard__link">
-              <a href={projectInfo.githubUrl}>Github</a>
+              <a target="_blank" href={projectInfo.githubUrl}>
+                Github
+              </a>
             </li>
             {/* link to live project as the "Live Project" text */}
             <li className="projectcard__link">

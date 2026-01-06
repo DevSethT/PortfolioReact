@@ -1,7 +1,11 @@
+import SpotsImg from "./images/SpotsScreenShot.PNG";
+import weatherImg from "./images/WtwrScreenShot.PNG";
+import HuntquestImg from "./images/huntquestScreenShot.PNG";
+
 const projects = [
   {
     id: 1,
-    image: "",
+    image: SpotsImg,
     title: "Spots",
     description: "An Image sharing website",
     githubUrl: "https://github.com/DevSethT/se_project_spots",
@@ -10,7 +14,7 @@ const projects = [
   },
   {
     id: 2,
-    image: "",
+    image: weatherImg,
     title: "WTWR",
     description:
       "An app that tells you what to where depending on the temp of where you are",
@@ -20,7 +24,7 @@ const projects = [
   },
   {
     id: 3,
-    image: "",
+    image: HuntquestImg,
     title: "Huntquest",
     description:
       "I worked with a team in the oct code jam at tripple ten and implaminted the intaial multi-page with javascipt and vite, Then i designed the calenderpage were it generates the events on the calender days",
