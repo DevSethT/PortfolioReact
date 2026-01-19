@@ -2,6 +2,7 @@ import "./Main.css";
 import { NavLink } from "react-router-dom";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import { projects } from "../../utils/projects"; // adjust path to your constants
+import Heroimage from "../../utils/images/MeImage.jpg";
 
 function Main() {
   const featuredProjects = projects.slice(0, 3);
@@ -11,6 +12,7 @@ function Main() {
       <div className="main-layout">
         <section className="main-hero">
           <h1 className="main-hero__title">Seth Taylor – Software Developer</h1>
+          <img src={Heroimage} alt="imges of me" className="main-hero-img" />
           <p className="main-hero__intro">
             Software engineering student focused on building clean,
             user-friendly web apps while growing into a full-stack developer.
