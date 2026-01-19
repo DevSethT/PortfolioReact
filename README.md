@@ -7,7 +7,6 @@ The site is being developed using React + Vite with a clean, modern design and a
 
 🛠 In Development
 
-
 Right now, the foundation of the project is being set up:
 Multi-page routing
 Navigation bar with mobile hamburger menu
@@ -52,8 +51,8 @@ CSS3
 React Router
 Git & GitHub
 
-
-
 📌 Notes
 
 This portfolio is a living project and will continue to improve as I grow as a developer and complete more projects.
+
+Live-Page[https://devsetht.github.io/PortfolioReact]

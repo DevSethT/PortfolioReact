@@ -40,9 +40,7 @@ function NavBar() {
 
       <header className="menu">
         <div className="menu__inner">
-          <NavLink to="/" className="menu__brand" onClick={closeMenu}>
-            
-          </NavLink>
+          <NavLink to="/" className="menu__brand" onClick={closeMenu}></NavLink>
 
           {/* Desktop nav */}
           <nav className="menu__nav">
@@ -79,13 +77,21 @@ function NavBar() {
           <NavLink to="/" className={customClassName} onClick={closeMenu}>
             Home
           </NavLink>
-          <NavLink to="/projects" className={customClassName} onClick={closeMenu}>
+          <NavLink
+            to="/projects"
+            className={customClassName}
+            onClick={closeMenu}
+          >
             Projects
           </NavLink>
           <NavLink to="/about" className={customClassName} onClick={closeMenu}>
             About Me
           </NavLink>
-          <NavLink to="/contact-me" className={customClassName} onClick={closeMenu}>
+          <NavLink
+            to="/contact-me"
+            className={customClassName}
+            onClick={closeMenu}
+          >
             Contact Me
           </NavLink>
         </nav>
